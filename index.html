@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Njujork</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Zaglavlje-->
+<header class="zaglavlje">
+    <nav class="navbar">
+            <h1 class="ime-stranice">NEW YORK</h1>
+        <a href="index.html" class="navbar-logo"><img src="slike/logo.jpg" alt="Logo"></a>
+        <ul class="navbar-nav">
+            <li class="nav-polje">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-polje dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Stranice</a>
+                <ul class="dropdown-meni">
+                    <li class="dropdown-item"><a href="visoko.html">Visokogradnja</a></li>
+                    <li class="dropdown-item"><a href="nisko.html">Niskogradnja</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button id="informaciono-dugme" onclick="informacije()">
+            <a href="#" class="nav-link">Info</a>
+        </button>
+    </nav>
+</header>
+
+
+
+<!--Prvi odeljak-->
+<div class="container1">
+    <div class="text-section">
+        <h2>Gradjevini Njujorka</h2>
+        <p>"Činjenica: Nijedan gradski horizont nije toliko ikoničan ili lep kao Njujork. Čikago je možda mesto gde je neboder
+        rođen, a gradovi poput Sijetla i San Franciska imaju prepoznatljive znamenitosti, ali Njujork je mesto gde mogu biti
+        neke od najvažnijih svetskih zgrada -  Empire State Building, Chrysler Building..."
+    </p>
+    <a href="https://chi-info.com/10-ikonicnih-gradevina-u-njujorku-koje-moras-videti/">
+    <p>
+        Izvor teksta: https://chi-info.com/10-ikonicnih-gradevina-u-njujorku-koje-moras-videti/
+    </p>
+    </a>
+    </div>
+
+    <!--Galerija-->
+    <div class="image-gallery1">
+        <div class="gallery-container1">
+            <img class="gallery-image" src="slike/brook.jpg" alt="Brooklyn Bridge">
+            <img class="gallery-image" src="slike/chrystler.jpg" alt="Chrystler Building">
+            <img class="gallery-image" src="slike/empirestate.jpg" alt="Empire State Building">
+        </div>
+    </div>
+</div>
+
+    <!--Kretanje kroz galeriju-->
+<div class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-image" src="">
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+</div>
+
+    <!--Drugi odeljak, tj indeks lista-->
+<div class="container2">
+    <div class="list-section">
+        <h2>Indeks</h2>
+        <ol class="ol-index">
+            <li>
+                <a href="visoko.html#promeni-boju">Visokogradnja</a>
+                <ul class="ul-index">
+                    <a href="visoko.html#OWTC"><li>One World Trade Center</li></a>
+                    <a href="visoko.html#FIB"><li>Flatiron Building</li></a>
+                    <a href="visoko.html#ESB"><li>Empire State Building</li></a>
+                    <a href="visoko.html#CB"><li>Chrysler Building</li></a>
+                </ul>
+            </li>
+            <li>
+                <a href="nisko.html#promeni-boju">Niskogradnja</a>
+                <ul>
+                    <a href="nisko.html#BB"><li>Brooklyn Bridge</li></a>
+                    <a href="nisko.html#KS"><li>Kip Slobode (Statue of Liberty)</li></a>
+                    <a href="nisko.html#MB"><li>Manhattan Bridge</li></a>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <!--Druga galerija-->
+    <div class="image-gallery2">
+            <img class="gallery-image" src="slike/flatiron.jpg" alt="Flatiron Building">
+            <img class="gallery-image" src="slike/liberty.jpg" alt="Kip Slobode">
+            <img class="gallery-image" src="slike/Manhattan_Bridge_May_2022_010.jpg" alt="Manhattan Bridge">
+            <img class="gallery-image" src="slike/one-world.jpg" alt="One World Trade Center">
+    </div>
+</div>
+
+    <!--Podnozje-->
+    <footer class="footer">
+        <div class="footer-sadrzaj">
+            <div class="kontakt">
+                <p>Email: savo.smilji@tfzr.rs</p>
+                <p>Telefon: 123-123-123</p>
+                <p>Adresa: 5th Ave, New York, NY</p>
+            </div>
+            <div class="mreze">
+                <a href="#">
+                    <img alt="Facebook" src="slike/fb.png">
+                </a>
+                <a href="#">
+                    <img alt="Twitter" src="slike/tw.png">
+                </a>
+                <a href="#">
+                    <img alt="Instagram" src="slike/inst.jpg">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
