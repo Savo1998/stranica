@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="visoko.css">
 </head>
 <body>
+        <!--Dugme za gore-dole-->
+        <div class="scroll-buttons">
+            <button id="scrollToTopButton">Top</button>
+            <button id="scrollToBottomButton">Bottom</button>
+        </div>
+        
     <!--Zaglavlje-->
 <header class="zaglavlje">
     <nav class="navbar">
@@ -123,7 +129,7 @@
                     <h2>Komentari</h2>
                 </div>
                 <!-- Forma za komentare -->
-                <form class="comment-form">
+                <form class="comment-form" onsubmit="return proveraForme()" >
                     <label for="name">Ime:</label>
                     <input type="text" id="name" name="name" required>
                     <label for="email">Email:</label>

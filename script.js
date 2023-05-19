@@ -1,21 +1,3 @@
-const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-
-dropdownToggles.forEach((toggle) => {
-toggle.addEventListener('click', (e) => {
-    e.preventDefault();
-    toggle.parentNode.classList.toggle('show');
-    });
-});
-
-window.addEventListener('click', (e) => {
-dropdownToggles.forEach((toggle) => {
-    if (!toggle.parentNode.contains(e.target)) {
-        toggle.parentNode.classList.remove('show');
-        }
-    });
-});
-
-
 //galerija
 
 let galleryImages = document.querySelectorAll(".gallery-image");
@@ -78,7 +60,26 @@ hideModal();
 
 // informacije :)
 function informacije() {
-    var informacija = "Ovo je sajt o gradjevinama Njujorka :)";
+    let informacija = "Ovo je sajt o gradjevinama Njujorka :)";
     alert(informacija);
 }
 
+//gore dole dugme
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollToTopButton = document.getElementById('scrollToTopButton');
+  const scrollToBottomButton = document.getElementById('scrollToBottomButton');
+//gore
+  scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+//dole
+  scrollToBottomButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth'
+    });
+  });
+});

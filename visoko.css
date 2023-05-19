@@ -341,3 +341,20 @@ aside {
     color: white;
     background-color: #ed0808;
 }
+
+.scroll-buttons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: grid;
+    gap: 10px;
+}
+
+.scroll-buttons button {
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+}

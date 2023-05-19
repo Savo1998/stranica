@@ -22,9 +22,12 @@ a:hover {
 
 p {
     margin-bottom: 1rem;
+    font-size: 1.25rem;
 }
 
-
+h2 {
+    font-size: 2rem;
+}
 /* Zaglavlje */
 .zaglavlje {
     background-color: #000;
@@ -91,7 +94,7 @@ p {
     padding: 0;
     background-color: rgb(223, 73, 73);
     border-radius: 0 0 1rem 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.5rem 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 .dropdown-meni li {
@@ -247,7 +250,7 @@ p {
 
 .list-section h2 {
     margin-top: 1rem;
-    font-size: 8rem;
+    font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -271,7 +274,6 @@ p {
 
 
 
-/*druga galerija*/
 .image-gallery2 {
     width: 50%;
     display: grid;
@@ -280,13 +282,13 @@ p {
 }
 
 .gallery-image img {
-    width: 5rem;
-    height: 3rem;
-    object-fit:fill;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: all 0.3s ease;
 }
 
-.gallery-img:hover img {
+.gallery-image:hover img {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
@@ -333,4 +335,21 @@ p {
 
 .mreze a {
     text-decoration: none;
+}
+
+.scroll-buttons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: grid;
+    gap: 10px;
+}
+
+.scroll-buttons button {
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
 }
